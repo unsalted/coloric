@@ -1,6 +1,11 @@
 Marko Widgets: UI Components Playground w/ Vite
 ==================================
 
+## add .env to root of project
+```
+VITE_CLIENT_ID=CLIENT_ID
+```
+
 ## Getting Started
 
 ```bash
