@@ -1,4 +1,4 @@
-Marko Widgets: UI Components Playground w/ Vite
+Coloric:Demo
 ==================================
 
 ## add .env to root of project
