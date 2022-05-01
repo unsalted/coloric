@@ -1,7 +1,7 @@
 import { Router } from "express";
 import indexPage from "./pages/index";
-import usersService from "./services/users";
+import unsplashService from "./services/unsplash";
 
 export default Router()
   .get("/", indexPage)
-  .get("/services/users", usersService);
+  .get("/services/unsplash", unsplashService);
