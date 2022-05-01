@@ -1,5 +1,6 @@
-<main#main>
-  <header.section.search>
+<div#main>
+  <header.section.header>
+    <div.logo>Coloric</div>
     <app-search
       color=state.color
       query=state.query
@@ -7,5 +8,7 @@
       on-query-change("handleSearchChange")
     />
   </header>
-  <section><app-images images=state.images/></section>
-</main>
+  <section>
+    <app-images images=state.images/>
+  </section>
+</div>

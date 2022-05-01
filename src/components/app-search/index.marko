@@ -30,36 +30,34 @@ class {
     }
 }
 
-<div#container>
-    <div.search-box>
-        <input.search-form-input
-            type="search"
-            name="search"
-            placeholder="Search"
-            value=input.query
-            onInput("onSearchChange")
-        >
-        <details.dropdown#dropdown open=state.menuOpen>
-            <summary.dropdown-button>
-                <span.selected-item#selected-item>${input.color.name}</span>
-            </summary>
-            <div.dropdown-menu>
-                <div.dropdown-menu-header>Color</div>
-                <div.dropdown-menu-list>
-                    <for|color, index| of=state.colors>
-                        <label.dropdown-menu-item key=index>
-                            <input
-                                type="radio"
-                                name="item"
-                                value=index
-                                onClick("onColorChange")
-                                checked=(input.color.name === color.name)
-                            >
-                            <span>${color.name}</span>
-                        </label>
-                    </for>
-                </div>
+<div.search-box>
+    <input.search-form-input
+        type="search"
+        name="search"
+        placeholder="Search"
+        value=input.query
+        onInput("onSearchChange")
+    >
+    <details.dropdown#dropdown open=state.menuOpen>
+        <summary.dropdown-button>
+            <span.selected-item#selected-item>${input.color.name}</span>
+        </summary>
+        <div.dropdown-menu>
+            <div.dropdown-menu-header>Color</div>
+            <div.dropdown-menu-list>
+                <for|color, index| of=state.colors>
+                    <label.dropdown-menu-item key=index>
+                        <input
+                            type="radio"
+                            name="item"
+                            value=index
+                            onClick("onColorChange")
+                            checked=(input.color.name === color.name)
+                        >
+                        <span>${color.name}</span>
+                    </label>
+                </for>
             </div>
-        </details>
-    </div>
+        </div>
+    </details>
 </div>

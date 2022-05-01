@@ -13,4 +13,7 @@ $ const { class: className, ...attrs } = input;
         <img.image-item src=(image.urls.regular)>
         </figure>
     </for>
+    <if(input.images.length === 0)>
+        <h2>No results...</h2>
+    </if>
 </div>
