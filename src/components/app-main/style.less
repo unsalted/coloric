@@ -15,7 +15,19 @@
 
 }
 
+.image-container {
+    margin: 5rem 0rem;
+    z-index: 1;
+    position: relative;
+}
+
 .header {
+    position: fixed;
+    margin: 2rem 2rem;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     gap: 1rem 0.5rem;
@@ -27,5 +39,28 @@
     }
     .search-box {
         flex-grow: 1;
+    }
+}
+
+footer {
+    font-size: 0.8rem;
+    //box-shadow: rgba(0, 0, 0, 0.19) 0px -10px 20px, rgba(0, 0, 0, 0.23) 0px -6px 6px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    //background-color: #fff;
+    padding: 1rem 2rem;
+    z-index: 2000;
+}
+
+.logo {
+    text-align: center;
+}
+
+
+@media (min-width: 700px) {
+    .logo {
+        text-align: left;
     }
 }

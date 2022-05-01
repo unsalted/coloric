@@ -9,11 +9,13 @@ $ const { class: className, ...attrs } = input;
 
 <div.image-container>
     <for|image, index| of=input.images>
-        <figure.image-item>
-        <img.image-item src=(image.urls.regular)>
-        </figure>
+        <figure.image-item><img.image-item src=(image.urls.regular)></figure>
     </for>
-    <if(input.images.length === 0)>
-        <h2>No results...</h2>
-    </if>
 </div>
+
+<if(input.images.length === 0)>
+    <div.no-images>
+        <h2>No images found.</h2>
+        <h3>Try searching for something new.</h3>
+    </div>
+</if>
