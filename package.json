@@ -28,5 +28,8 @@
     "dev": "node --enable-source-maps index.js",
     "dev:inspect": "node --inspect --enable-source-maps index.js",
     "start": "cross-env NODE_ENV=production node --enable-source-maps index.js"
+  },
+  "volta": {
+    "node": "16.15.0"
   }
 }
