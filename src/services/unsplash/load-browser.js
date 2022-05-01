@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 
 export async function getUnsplash(options) {
     let colorRequest = color ? `&color=${color}` : '';

@@ -3,11 +3,11 @@ import { colors, debounce } from "../../utils/utils.js";
 
 
 export default class {
-  onInput(input) {
-
+  async onInput(input) {
+    const initialColor = colors[Math.floor(Math.random() * colors.length)]
     this.state = {
       colors: colors,
-      color: colors[Math.floor(Math.random() * colors.length)],
+      color: initialColor,
       query: '',
       images: []
     }
